@@ -81,9 +81,59 @@ ul {
 li {
     flex: 1;
     display: flex;
-    justify-content: center;
+    padding: 2px;
+    align-items: center;
     align-self: center;
+    min-height: 33px;
 }
 section:nth-child(even) {
     background-color: #ddd;
+}
+/*-------------------------------*/
+/*  Icons  */
+/*-------------------------------*/
+.html5_icon {
+    background-image: url('./images/html5_icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.javascript_icon {
+    background-image: url('./images/javascript_icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.jquery_icon {
+    background-image: url('./images/jquery_icon_3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.react_icon {
+    background-image: url('./images/react_icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.nodejs_icon {
+    background-image: url('./images/nodejs_icon_3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.linkedin_icon {
+    background-image: url('./images/linkedin_icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.email_icon {
+    background-image: url('./images/email_icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.github_icon {
+    background-image: url('./images/github_icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.java_icon {
+    background-image: url('./images/java_icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
 }
