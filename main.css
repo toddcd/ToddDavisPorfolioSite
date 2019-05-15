@@ -4,9 +4,8 @@
 }
 
 body {
-    font-family: "Open Sans",
-    sans-serif;
-    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
     color: #444;
     text-align: center;
     line-height: 1.5;
@@ -44,6 +43,14 @@ header {
     width: 100%;
     background-color: #ddd;
 
+}
+
+header > p:first-of-type {
+    font-size: 25px;
+}
+
+section > p:first-of-type {
+    font-size: 20px;
 }
 
 section {
