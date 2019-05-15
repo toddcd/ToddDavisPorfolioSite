@@ -47,6 +47,7 @@ header {
 }
 
 section {
+    position: relative;
     min-height: 200px;
     width: 350px;
     padding: 6% 0;
@@ -56,6 +57,26 @@ section {
     border-radius: 5px;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0 25% 0 25%;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
 section:nth-child(even) {
     background-color: #ddd;
 }
