@@ -18,31 +18,31 @@
     <div class="hamburger"><i class="fas fa-bars fa-lg"></i></div>
 </nav>
 <div class="nav_panel">
-    <button class="nav_button" type="submit">About</button>
-    <button class="nav_button" type="submit">Projects</button>
+    <button id='projects' class="nav_button" type="submit">Projects</button>
+    <button id='about' class="nav_button" type="submit">About</button>
     <ul class="nav_ul">
-        <li class="icon_li linkedin_icon"></li>
-        <li class="icon_li github_icon"></li>
+        <li onclick="window.open('https://www.linkedin.com/in/todd-c-davis/','target=blank')"
+            class="icon_li linkedin_icon"></li>
+        <li onclick="window.open('https://github.com/toddcd','target=blank')" class="icon_li github_icon"></li>
         <li class="icon_li email_icon"></li>
     </ul>
 </div>
-<main role="main">
-    <header role="banner">
-        <p>Todd<span>Davis</span></p>
-        <hr>
-        <p>Full Stack Developer</p>
-    </header>
-    <section>
-        <div class="monuments">
-            <p>Cycling Monuments</p>
-        </div>
+<header role="banner">
+    <p>Todd<span>Davis</span></p>
+    <hr>
+    <p>Full Stack Developer</p>
+</header>
+<main role="main" id="main">
+    <h1 class="ph1">projects</h1>
+    <section class="monuments project">
+
         <ul class="stack_ul">
             <li class="icon_li html5_icon"></li>
             <li class="icon_li javascript_icon"></li>
             <li class="icon_li jquery_icon"></li>
         </ul>
     </section>
-    <section>
+    <section class="project">
         <div>
             <p>Ciclismo Snack Finder</p>
         </div>
@@ -52,7 +52,7 @@
             <li class="icon_li react_icon"></li>
         </ul>
     </section>
-    <section>
+    <section class="project">
         <div>
             <p>Cycling Position Notes</p>
         </div>

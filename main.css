@@ -17,7 +17,8 @@ footer {
     width: 100%;
     height: 100%;
     background-color: #05668d;
-    border-top: 1px #a9a9a9 solid;
+    /*border-top: 1px #a9a9a9 solid;*/
+    box-shadow: 0 -2px 2px -2px #a5be00;
 }
 
 nav {
@@ -32,12 +33,72 @@ nav {
     z-index: 10;
 }
 
+/*-------------------------------*/
+/*  Icons And Images */
+/*-------------------------------*/
+.monuments {
+    background: url('./images/monuments_cover.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+.html5_icon {
+    background: url('./images/html5_icon.png') no-repeat center center;
+}
+.javascript_icon {
+    background: url('./images/javascript_icon.png') no-repeat center center;
+}
+.jquery_icon {
+    background: url('./images/jquery_icon_3.png') no-repeat center center;
+}
+.react_icon {
+    background: url('./images/react_icon.png') no-repeat center center;
+}
+.nodejs_icon {
+    background: url('./images/nodejs_icon_3.png') no-repeat center center;
+}
+.linkedin_icon {
+    background: url('./images/linkedin_icon_white.png') no-repeat center center;
+}
+.linkedin_icon:hover {
+    background: url('./images/linkedin_icon_green.png') no-repeat center center;
+}
+.icon_li > a {
+    display:block;
+}
+.email_icon {
+    background: url('./images/email_icon_white.png') no-repeat center center;
+}
+.email_icon:hover {
+    background: url('./images/email_icon_green.png') no-repeat center center;
+}
+.github_icon {
+    background: url('./images/github_icon_white_round.png') no-repeat center center;
+}
+.github_icon:hover {
+    background: url('./images/github_icon_green_round.png') no-repeat center center;
+}
+.java_icon {
+    background: url('./images/java_icon.png') no-repeat center center;
+}
+.td3_logo {
+    background: url('./images/td3_logo_white_blue_32x32.png') no-repeat left center;
+    height: 32px;
+    width: 32px;
+}
+.td3_logo:hover {
+    background: url('./images/td3_logo_white_green_32x32.png') no-repeat left center;
+    height: 32px;
+    width: 32px;
+}
+
 .logo {
     flex: 1;
     display: flex;
     align-self: center;
     align-content: start;
-    padding: 5px;
+    padding: 10px;
 }
 
 .hamburger {
@@ -45,7 +106,7 @@ nav {
     display: flex;
     align-self: center;
     justify-content: flex-end;
-    padding: 5px;
+    padding: 10px;
     color: #ebf2fa;
 }
 
@@ -61,13 +122,15 @@ main {
 
 header {
     margin-bottom: 5px;
-    padding: 12%;
+    padding: 15%;
     width: 100%;
     background-color: #ebf2fa;
+    box-shadow: 0 2px 2px -2px #a5be00;
 }
 
 header > p {
     color: #a5be00;
+    /*text-shadow: .5px .5px #05668d;*/
 }
 
 header > hr {
@@ -96,7 +159,7 @@ p > span {
     top: 0;
     left: 0;
     overflow-x: hidden;
-    padding: 42px 0 1px 0;
+    padding: 52px 0 1px 0;
 }
 
 .nav_button {
@@ -125,30 +188,21 @@ p > span {
 }
 
 .nav_button:hover {
+    color: #a5be00;
     background-color: #05668d;
 }
 
-/*.nav_ul:hover {*/
-    /*background-color: #05668d;*/
-/*}*/
+.nav_ul:hover {
+    background-color: #05668d;
+}
 
-section > p:first-of-type {
+.project > p:first-of-type {
     font-size: 20px;
 }
 
-section {
-    position: relative;
-    min-height: 200px;
-    width: 350px;
-    padding: 0;
-    margin: 5px;
-    background-color: #ebf2fa;
-    border: 1px #ebf2fa solid;
-    border-radius: 5px;
-    box-shadow: 1px 1px #ebf2fa;
-}
 
-section:hover {
+
+.project:hover {
     box-shadow: 1px 1px 1px #a5be00;
 }
 
@@ -174,89 +228,48 @@ section:hover {
     align-self: center;
     min-height: 33px;
 }
+
+.about {
+    position: relative;
+    min-height: 200px;
+    width: 350px;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+    color: #05668d;
+}
+
+.detail {
+    position: relative;
+    min-height: 200px;
+    width: 350px;
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+    color: #05668d;
+}
+
+.ph1 {
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+    color: #05668d;
+}
+
+
 /*section:nth-child(even) {*/
     /*background-color: #679436;*/
 /*}*/
-/*-------------------------------*/
-/*  Icons And Images */
-/*-------------------------------*/
-.monuments {
-    height: 100%;
-    background-image: url('./images/monuments_cover.png');
-    background-repeat: no-repeat;
-    background-position: center center;
+
+.project {
+    position: relative;
+    min-height: 200px;
+    width: 350px;
+    padding: 0;
+    margin: 5px;
+    color: #05668d;
+    background-color: #ebf2fa;
+    border: 1px #ebf2fa solid;
     border-radius: 5px;
-}
-.html5_icon {
-    background-image: url('./images/html5_icon.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.javascript_icon {
-    background-image: url('./images/javascript_icon.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.jquery_icon {
-    background-image: url('./images/jquery_icon_3.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.react_icon {
-    background-image: url('./images/react_icon.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.nodejs_icon {
-    background-image: url('./images/nodejs_icon_3.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.linkedin_icon {
-    background-image: url('./images/linkedin_icon_black.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.linkedin_icon:hover {
-    background-color: #05668d;
-}
-
-.email_icon {
-    background-image: url('./images/email_icon_black.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.email_icon:hover {
-    background-color: #05668d;
-}
-
-.github_icon {
-    background-image: url('./images/github_icon_black_round.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.github_icon:hover {
-    background-color: #05668d;
-}
-
-.java_icon {
-    background-image: url('./images/java_icon.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.td3_logo {
-    background-image: url('./images/td3_logo_white_blue_32x32.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    height: 32px;
-    width: 32px;
-
-}
-.td3_logo:hover {
-    background-image: url('./images/td3_logo_white_green_32x32.png');
-    background-repeat: no-repeat;
-    background-position: left center;
-    height: 32px;
-    width: 32px;
+    box-shadow: 1px 1px #ebf2fa;
 }
