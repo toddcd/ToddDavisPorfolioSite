@@ -159,6 +159,27 @@ p > span {
     color: #05668d;
 }
 
+.about_title {
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+    padding: 15px 0 15px 0;
+    width: 100%;
+
+}
+.about_title h1 {
+    flex: 1;
+    align-self: center;
+}
+.about_title > img {
+    flex: 1;
+    align-self: center;
+    width: 100px;
+    height: auto;
+    /*margin: 5px 20px 5px 5px;;*/
+    border: 1px solid #ebf2fa;
+    border-radius: 50%;
+}
 .detail {
     position: relative;
     height: 100%;
@@ -302,7 +323,7 @@ p > span {
 .detail > img {
     max-width: 300px;
     height: auto;
-    border: 1px #ebf2fa;
+    border: 1px solid #ebf2fa;
     border-radius: 5px;
 }
 .ph1 {

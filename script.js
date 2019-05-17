@@ -48,7 +48,10 @@ function openAboutMe() {
 
     $('#main').html(`
       <section class="about">
+        <div class="about_title">
         <h1>${DATA.about.title}</h1>
+        <img src=${DATA.about.cover_img} alt=${DATA.about.cover_alt}">
+        </div>
         <h4>${DATA.about.subtitle}</h4>
         <br>
         <p>${DATA.about.desc}</p>
