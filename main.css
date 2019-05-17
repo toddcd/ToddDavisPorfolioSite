@@ -174,7 +174,7 @@ p > span {
 .about_title > img {
     flex: 1;
     align-self: center;
-    width: 100px;
+    max-width: 150px;
     height: auto;
     /*margin: 5px 20px 5px 5px;;*/
     border: 1px solid #ebf2fa;
@@ -366,6 +366,10 @@ p > span {
     .project {
         width: 425px;
         min-height: 300px;
+    }
+    .about_title > img {
+        max-width: 200px;
+        margin-right: 15px;
     }
 }
 
