@@ -107,7 +107,7 @@ main {
     height: 100%;
 }
 
-header {
+.main_header {
     margin-bottom: 5px;
     padding: 15% 20px 20px 20px;
     width: 100%;
@@ -115,20 +115,20 @@ header {
     box-shadow: 0 2px 2px -2px #a5be00;
 }
 
-header > p {
+.main_header > p {
     color: #a5be00;
     /*text-shadow: .5px .5px #05668d;*/
 }
 
-header > hr {
+.main_header > hr {
     color: #ffffff;
 }
 
-header > p {
+.main_header > p {
     color: #a5be00;
 }
 
-header > p:first-of-type {
+.main_header > p:first-of-type {
     font-size: 25px;
 }
 
@@ -180,15 +180,6 @@ p > span {
     border: 1px solid #ebf2fa;
     border-radius: 50%;
 }
-.detail {
-    position: relative;
-    height: 100%;
-    width: 350px;
-    text-align: left;
-    padding: 50px 20px 5px 20px;
-    margin: 5px;
-    color: #05668d;
-}
 
 .nav_button {
     padding: 15px;
@@ -208,11 +199,24 @@ p > span {
     align-items: center;
     padding: 10px;
 }
+
+.detail {
+    display: flex;
+    width: 100%;
+}
+
+.detail_content {
+    width: 350px;
+    text-align: left;
+    color: #05668d;
+    padding: 0 20px 0 20px;
+}
+
 .demo_ul {
+    flex: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: center;
     padding: 0;
 }
 
@@ -295,16 +299,15 @@ p > span {
 }
 
 .detail_stack_ul {
+    flex: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-content: space-evenly;
+    align-content: space-between;
     width: 100%;
     bottom: 0;
-    padding: 0 25% 0 25%;
+    padding: 0 5% 0 5%;
     background-color: #ffffff;
-    border-top: 1px solid #ebf2fa;
-    border-radius: 5px;
 }
 
 .stack_icon_li {
@@ -320,17 +323,22 @@ p > span {
     color: #05668d;
 }
 
-.detail > img {
-    max-width: 300px;
-    height: auto;
+.detail_header {
+    padding: 15% 0 0 0;
+    width: 100%;
+    background-color: #ebf2fa;
+}
+
+.detail_header > img {
+    max-width: 100%;
     border: 1px solid #ebf2fa;
     border-radius: 5px;
 }
 .ph1 {
     text-align: left;
     width: 325px;
-    padding: 10px;
-    margin: 5px;
+    padding: 20px 0 10px 0;
+    /*margin: 5px;*/
     color: #05668d;
 }
 
@@ -356,7 +364,11 @@ p > span {
         width: 500px;
     }
 
-    header {
+    .detail_content{
+        width: 500px;
+    }
+
+    .main_header {
         padding: 12% 20px 20px 20px;
     }
 
@@ -374,7 +386,7 @@ p > span {
 }
 
 @media only screen and (min-width: 700px) {
-    header {
+    .main_header {
         padding: 5% 20px 20px 20px;
     }
 }
