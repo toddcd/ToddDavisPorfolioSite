@@ -47,23 +47,27 @@ function openAboutMe() {
     $('header').detach();
 
     $('#main').html(`
-      <section class="about">
-        <div class="about_title">
+      <header role="banner">
+      <div class="about_header">
         <h1>${DATA.about.title}</h1>
         <img src=${DATA.about.cover_img} alt=${DATA.about.cover_alt}">
-        </div>
+      </div>
+      </header>
+      <section class="about">
         <h4>${DATA.about.subtitle}</h4>
         <br>
         <p>${DATA.about.desc}</p>
         <br>
-        </section>
-        <ul class="about_social_ul">
-            <li class="about_social_li"><span class="about_icon"><i class="fab fa-linkedin-in fa-lg"></i></span></li>
-            <li class="about_social_li"><span class="about_icon"><i class="fab fa-github fa-lg"></i></span></li>
-            <li class="about_social_li"><span class="about_icon"><i class="fas fa-envelope fa-lg"></i></span></li>
-        </ul>
+      </section>
+      <ul class="about_social_ul">
+         <li class="about_social_li"><span class="about_icon"><i class="fab fa-linkedin-in fa-lg"></i></span></li>
+         <li class="about_social_li"><span class="about_icon"><i class="fab fa-github fa-lg"></i></span></li>
+         <li class="about_social_li"><span class="about_icon"><i class="fas fa-envelope fa-lg"></i></span></li>
+      </ul>
 `
     );
+
+    $('header').css('width', '100%')
 
     createSocialClickHandlers();
 }
