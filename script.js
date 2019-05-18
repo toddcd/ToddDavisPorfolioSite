@@ -5,12 +5,12 @@ function openProjects() {
     $(".nav_panel").slideUp('fast');
 
     $('#main').html(`
-       <header role="banner">
+       <header class="main_header" role="banner">
         <p>Todd<span>Davis</span></p>
         <hr>
         <p>Full Stack Developer</p>
        </header>
-       <h1 class="ph1">projects</h1>
+       <h3 class="ph1">recent projects</h3>
        ${generateListOfProjects()}
 `
     )
@@ -80,20 +80,24 @@ function openProjectDetail(project_id) {
     $('header').hide('fast');
 
     $('#main').html(`
+      <header class="detail_header" role="banner">
+      <img src=${project.detail_img} alt=${project.detail_alt}">
+      </header>
       <section class="detail">
-        <h1>${project.title}</h1>
-        <img src=${project.detail_img} alt=${project.detail_alt}">
-        <br>    
-        <p>${project.solution}</p>
-        <br>
         <ul class="demo_ul">
             <li class="demo_li"><span class="demo_icon"><i class="far fa-play-circle fa-2x"></i></span></li>
             <li class="demo_li"><span class="demo_icon"><i class="fab fa-github fa-2x"></i></span></li>
         </ul>
+        <ul class="detail_stack_ul">
+            ${li}
+        </ul>
       </section>
-      <ul class="detail_stack_ul">
-        ${li}
-      </ul>
+      <div class="detail_content">
+        <h3>${project.title}</h3>
+        <br>    
+        <p>${project.solution}</p>
+        <br>
+      </div>
 `
     );
 
@@ -122,14 +126,17 @@ function toggleNavPanel() {
 function createSocialClickHandlers() {
     $('.fa-github').click(function () {
         window.open(DATA.about.github, '_blank');
+        $(".nav_panel").slideUp("fast");
     });
 
     $('.fa-linkedin-in').click(function () {
         window.open(DATA.about.linkein, '_blank');
+        $(".nav_panel").slideUp("fast");
     });
 
     $('.fa-envelope').click(function () {
         window.open(DATA.about.mailto, 'emailWindow');
+        $(".nav_panel").slideUp("fast");
     });
 }
 
