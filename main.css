@@ -8,7 +8,8 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    font-family: "Open Sans", sans-serif;
+    font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
+    /*font-family: Roboto ;*/
     font-size: 16px;
     color: #ebf2fa;
     text-align: center;
@@ -69,15 +70,15 @@ nav {
     background: url('./images/java_icon.png') no-repeat center center;
 }
 .td3_logo {
-    background: url('./images/td3_logo_white_blue_32x32.png') no-repeat left center;
-    height: 32px;
-    width: 32px;
+    background: url('./images/td3_logo_white_blue_45x45.png') no-repeat left center;
+    height: 45px;
+    width: 45px;
 }
-.td3_logo:hover {
-    background: url('./images/td3_logo_white_green_32x32.png') no-repeat left center;
-    height: 32px;
-    width: 32px;
-}
+/*.td3_logo:hover {*/
+    /*background: url('./images/td3_logo_white_green_32x32.png') no-repeat left center;*/
+    /*height: 32px;*/
+    /*width: 32px;*/
+/*}*/
 
 .logo {
     flex: 1;
@@ -149,6 +150,77 @@ p > span {
     padding: 52px 0 1px 0;
 }
 
+.landing {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    /*position: relative;*/
+    /*z-index: 0;*/
+    padding: 20% 5px 20px 5px;
+}
+
+.landing .h3{
+    text-align: left;
+}
+
+.landing_greeting {
+    display: flex;
+    flex-direction: column;
+    /*z-index: 0;*/
+    /*top: 0;*/
+    color: #05668d;
+}
+
+.landing_greeting > div {
+    width: 100%;
+    /*padding-left: 20%;*/
+}
+
+.greeting {
+    text-align: left;
+}
+
+.greeting > h1 {
+    font-size: 50px;
+    display: inline;
+}
+
+.greeting > h4 {
+    color: #a5be00;
+}
+
+.greeting_desc {
+    text-align: left;
+    color: #05668d;
+}
+
+.greeting_desc > h2 {
+    text-align: left;
+    color: #05668d;
+    padding: 20px 0 20px 0;
+}
+
+.landing_img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*position: absolute;*/
+    /*z-index: -1;*/
+    /*top: 0;*/
+    /*width: 500px;*/
+}
+
+.landing_img > img {
+    align-self: center;
+    width: 350px;
+    height: auto;
+}
+
+.landing_desc {
+    align-self: center;
+    color: #05668d;
+}
+
 .about {
     position: relative;
     height: 100%;
@@ -173,7 +245,7 @@ p > span {
 .about_header h1 {
     flex: 1;
     align-self: center;
-    padding-left: 2;
+    padding-left: 2px;
 
 }
 .about_header > img {
@@ -389,6 +461,18 @@ p > span {
         max-width: 200px;
         margin-right: 15px;
     }
+
+    .landing {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        padding: 5% 0 20px 0;
+    }
+
+    .landing_img > img {
+        width: 500px;
+    }
+
 }
 
 @media only screen and (min-width: 700px) {
