@@ -67,16 +67,16 @@ function openLandingPage () {
         </div>
       </section>
       <ul class="about_social_ul">
-         <li class="about_social_li"><span class="about_icon"><i class="fab fa-linkedin-in fa-lg"></i></span></li>
-         <li class="about_social_li"><span class="about_icon"><i class="fab fa-github fa-lg"></i></span></li>
-         <li class="about_social_li"><span class="about_icon"><i class="fas fa-envelope fa-lg"></i></span></li>
+         <li class="about_social_li"><span class="about_icon"><i class="page-linkedin fab fa-linkedin-in fa-lg"></i></span></li>
+         <li class="about_social_li"><span class="about_icon"><i class="page-github fab fa-github fa-lg"></i></span></li>
+         <li class="about_social_li"><span class="about_icon"><i class="page-email fas fa-envelope fa-lg"></i></span></li>
       </ul>
 `
     );
 
     $('header').css('width', '100%')
 
-    createSocialClickHandlers();
+    createPageSocialClickHandlers();
 }
 
 function openProjectDetail(project_id) {
@@ -97,7 +97,7 @@ function openProjectDetail(project_id) {
       <section class="detail">
         <ul class="demo_ul">
             <li class="demo_li"><span class="demo_icon"><i class="far fa-play-circle fa-2x"></i></span></li>
-            <li class="demo_li"><span class="demo_icon"><i class="fab fa-github fa-2x"></i></span></li>
+            <li class="demo_li"><span class="demo_icon"><i class="project-github fab fa-github fa-2x"></i></span></li>
         </ul>
         <ul class="detail_stack_ul">
             ${li}
@@ -117,8 +117,8 @@ function openProjectDetail(project_id) {
         <br>
       </div>
       <ul class="about_social_ul">
-         <li class="about_social_li"><span class="about_icon"><i class="fab fa-linkedin-in fa-lg"></i></span></li>
-         <li class="about_social_li"><span class="about_icon"><i class="fas fa-envelope fa-lg"></i></span></li>
+         <li class="about_social_li"><span class="about_icon"><i class="page-linkedin fab fa-linkedin-in fa-lg"></i></span></li>
+         <li class="about_social_li"><span class="about_icon"><i class="page-email fas fa-envelope fa-lg"></i></span></li>
       </ul>
 `
     );
@@ -129,19 +129,11 @@ function openProjectDetail(project_id) {
         window.open(project.demo_location, '_blank');
     });
 
-    $('.fa-github').click(function () {
+    $('.project-github').click(function () {
         window.open(project.src_location, '_blank');
     });
 
-    $('.fa-linkedin-in').click(function () {
-        window.open(DATA.about.linkein, '_blank');
-        $(".nav_panel").slideUp("fast");
-    });
-
-    $('.fa-envelope').click(function () {
-        window.open(DATA.about.mailto, 'emailWindow');
-        $(".nav_panel").slideUp("fast");
-    });
+    createPageSocialClickHandlers();
 }
 
 function toggleNavPanel() {
@@ -155,30 +147,52 @@ function toggleNavPanel() {
     }
 }
 
-function createSocialClickHandlers() {
-    $('.fa-github').click(function () {
+function createPageSocialClickHandlers() {
+    $('.page-github').click(function () {
+        window.open(DATA.about.github, '_blank');
+    });
+
+    $('.page-linkedin').click(function () {
+        window.open(DATA.about.linkein, '_blank');
+    });
+
+    $('.page-email').click(function () {
+        window.open(DATA.about.mailto, 'emailWindow');
+        $(".nav_panel").slideUp("fast");
+    });
+}
+
+function createNavSocialClickHandlers() {
+    $('.nav-github').click(function () {
         window.open(DATA.about.github, '_blank');
         $(".nav_panel").slideUp("fast");
     });
 
-    $('.fa-linkedin-in').click(function () {
+    $('.nav-linkedin').click(function () {
         window.open(DATA.about.linkein, '_blank');
         $(".nav_panel").slideUp("fast");
     });
 
-    $('.fa-envelope').click(function () {
+    $('.nav-email').click(function () {
         window.open(DATA.about.mailto, 'emailWindow');
         $(".nav_panel").slideUp("fast");
     });
 }
 
 function createNavigationClickHandlers() {
-    $('#about').click(function () {
-        // openAboutMe();
+    $('#nav_panel_about').click(function () {
         openLandingPage();
     });
 
-    $('#projects').click(function () {
+    $('#nav_panel_projects').click(function () {
+        openProjects();
+    });
+
+    $('#nav_bar_about').click(function () {
+        openLandingPage();
+    });
+
+    $('#nav_bar_projects').click(function () {
         openProjects();
     });
 
@@ -195,7 +209,7 @@ function createNavigationClickHandlers() {
 }
 
 function startSite() {
-    createSocialClickHandlers();
+    createNavSocialClickHandlers();
     createNavigationClickHandlers()
     openLandingPage();
 }
