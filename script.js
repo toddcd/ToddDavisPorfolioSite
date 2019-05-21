@@ -47,14 +47,14 @@ function openLandingPage () {
       <section class="landing">
         <div class="landing_greeting">
             <div class="greeting">
-                <h4>Hey I'm</h4>
+                <h4>Hey, I'm</h4>
                 <h1>Todd Davis</h1>
             </div>      
         </div>
          <div>
          <h3 class="greeting_desc">
            <p>Full Stack Developer.</p>
-           <p>Bike lover.</p>
+           <p>Bike racer.</p>
            <p>Coffee drinker.</p>
          </h3>
          </div>
@@ -181,6 +181,10 @@ function createNavigationClickHandlers() {
     $('#projects').click(function () {
         openProjects();
     });
+
+    $('.td3_logo').click(function () {
+        openLandingPage();
+    })
 
     $(".nav_ul li").click(function () {
         $(".nav_panel").slideUp("fast");
