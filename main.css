@@ -146,6 +146,33 @@ p > span {
     font-weight: bold;
 }
 
+.nav_bar {
+    visibility: hidden;
+    display: none;
+}
+
+.nav_bar_projects {
+    align-self: center;
+    background-color: #05668d;
+}
+
+.nav_bar_about {
+    align-self: center;
+    background-color: #05668d;
+}
+
+.nav_bar_social_ul {
+    display: flex;
+    align-content: space-between;
+    align-self: center;
+}
+
+.nav_bar_social_li {
+    flex: 1;
+    display: flex;
+    padding: 0 15px 0 15px;
+}
+
 .nav_panel {
     background: #427aa1;
     display: none;
@@ -197,9 +224,13 @@ p > span {
     color: #a5be00;
 }
 
+.greeting > p {
+    color: #427aa1;
+}
+
 .greeting_desc {
     text-align: left;
-    color: #05668d;
+    color: #427aa1;
 }
 
 .greeting_desc > h2 {
@@ -229,7 +260,7 @@ p > span {
     color: #05668d;
 }
 
-.nav_button {
+.nav_panel_button {
     padding: 15px;
     background-color: #427aa1;
     color: #ebf2fa;
@@ -241,7 +272,25 @@ p > span {
     width: 100%;
     text-align: center;
 }
-.nav_social_ul, .about_social_ul {
+
+.nav_bar_button {
+    padding: 15px;
+    background-color: #05668d;
+    color: #ebf2fa;
+    font-size: 16px;
+    border: 0;
+    text-transform: lowercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.nav_bar_button:hover {
+    color: #a5be00;
+}
+
+.nav_panel_social_ul, .about_social_ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -272,7 +321,7 @@ p > span {
     padding: 0;
 }
 
-.nav_social_li, .about_social_li, .demo_li {
+.nav_panel_social_li, .about_social_li, .demo_li {
     flex: 1;
     display: flex;
 }
@@ -305,16 +354,16 @@ p > span {
     align-self: center;
 }
 
-.nav_social_ul:hover {
+.nav_panel_social_ul:hover {
     background-color: #05668d;
 }
 
-.nav_button:hover {
+.nav_panel_button:hover {
     color: #a5be00;
     background-color: #05668d;
 }
 
-.nav_ul:hover, .nav_social_ul:hover {
+.nav_ul:hover, .nav_panel_social_ul:hover {
     background-color: #05668d;
 }
 
@@ -410,6 +459,20 @@ p > span {
 }
 
 @media only screen and (min-width: 525px) {
+
+    .nav_bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        float: none;
+        visibility: visible;
+    }
+
+    .hamburger {
+        visibility: hidden;
+        display: none;
+    }
+
     .detail {
         width: 500px;
     }
