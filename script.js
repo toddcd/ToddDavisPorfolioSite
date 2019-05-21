@@ -40,38 +40,6 @@ function generateListOfProjects() {
     return projects;
 }
 
-function openAboutMe() {
-
-    $('.nav_panel').slideUp('fast');
-
-    $('header').detach();
-
-    $('#main').html(`
-      <header role="banner">
-      <div class="about_header">
-        <h1>${DATA.about.title}</h1>
-        <img src=${DATA.about.cover_img} alt=${DATA.about.cover_alt}">
-      </div>
-      </header>
-      <section class="about">
-        <h4>${DATA.about.subtitle}</h4>
-        <br>
-        <p>${DATA.about.desc}</p>
-        <br>
-      </section>
-      <ul class="about_social_ul">
-         <li class="about_social_li"><span class="about_icon"><i class="fab fa-linkedin-in fa-lg"></i></span></li>
-         <li class="about_social_li"><span class="about_icon"><i class="fab fa-github fa-lg"></i></span></li>
-         <li class="about_social_li"><span class="about_icon"><i class="fas fa-envelope fa-lg"></i></span></li>
-      </ul>
-`
-    );
-
-    $('header').css('width', '100%')
-
-    createSocialClickHandlers();
-}
-
 function openLandingPage () {
     $('.nav_panel').slideUp('fast');
 
@@ -137,7 +105,13 @@ function openProjectDetail(project_id) {
       </section>
       <div class="detail_content">
         <h3>${project.title}</h3>
+        <br>
+        <h4>Problem</h4>
+        <hr>
+        <p>${project.problem}</p>
         <br>    
+        <h4>Solution</h4>
+        <hr>
         <p>${project.solution}</p>
         <br>
       </div>

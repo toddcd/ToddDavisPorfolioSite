@@ -20,8 +20,8 @@ const DATA = {
                 'javascript_icon',
                 'jquery_icon'
             ],
-            problem: '',
-            solution: 'Cycling Monuments is a quiz that tests and builds a player’s knowledge of cycling’s hardest and most prestigious one-day races in professional cycling. There are multiple choice questions that players answer and receive intimidate feedback. At the end they are notified how they did.',
+            problem: 'Professional cycling has a rich and deep history in Europe and each one of the Monument events is the equivalent of the Superbowl or Worlds Series. Unfortunately cycling is a complicated and hard to understand sport.',
+            solution: 'The Cycling Monuments Quiz tests and builds a player’s knowledge of cycling’s hardest and most prestigious one-day races in professional cycling with interesting questions and compelling photos.  There are multiple choice questions that players answer and receive intimidate feedback. At the end they are notified how they did.',
             active: true,
             demo_location: 'https://toddcd.github.io/monument-quiz/',
             src_location: 'https://github.com/toddcd/monument-quiz'
