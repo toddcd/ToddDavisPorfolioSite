@@ -72,6 +72,45 @@ function openAboutMe() {
     createSocialClickHandlers();
 }
 
+function openLandingPage () {
+    $('.nav_panel').slideUp('fast');
+
+    $('#main').html(`
+      <section class="landing">
+        <div class="landing_greeting">
+            <div class="greeting">
+                <h4>Hey I'm</h4>
+                <h1>Todd Davis</h1>
+            </div>      
+        </div>
+         <div>
+         <h3 class="greeting_desc">
+           <p>Full Stack Developer.</p>
+           <p>Bike lover.</p>
+           <p>Coffee drinker.</p>
+         </h3>
+         </div>
+        <div class="landing_img">
+            <img src='./images/cycling_logo_a5be00_small.png' alt='cycling image logo'>
+        </div>
+        <div class="greeting_desc">
+           <h2>About Me</h2>
+           <p>${DATA.about.desc}</p>
+        </div>
+      </section>
+      <ul class="about_social_ul">
+         <li class="about_social_li"><span class="about_icon"><i class="fab fa-linkedin-in fa-lg"></i></span></li>
+         <li class="about_social_li"><span class="about_icon"><i class="fab fa-github fa-lg"></i></span></li>
+         <li class="about_social_li"><span class="about_icon"><i class="fas fa-envelope fa-lg"></i></span></li>
+      </ul>
+`
+    );
+
+    $('header').css('width', '100%')
+
+    createSocialClickHandlers();
+}
+
 function openProjectDetail(project_id) {
 
     let project = DATA.project_detail[project_id];
@@ -146,7 +185,8 @@ function createSocialClickHandlers() {
 
 function createNavigationClickHandlers() {
     $('#about').click(function () {
-        openAboutMe();
+        // openAboutMe();
+        openLandingPage();
     });
 
     $('#projects').click(function () {
@@ -164,7 +204,7 @@ function createNavigationClickHandlers() {
 function startSite() {
     createSocialClickHandlers();
     createNavigationClickHandlers()
-    openProjects();
+    openLandingPage();
 }
 
 $(startSite());
