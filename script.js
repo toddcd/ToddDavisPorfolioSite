@@ -118,7 +118,6 @@ function openProjectDetail(project_id) {
       </div>
       <ul class="about_social_ul">
          <li class="about_social_li"><span class="about_icon"><i class="fab fa-linkedin-in fa-lg"></i></span></li>
-         <li class="about_social_li"><span class="about_icon"><i class="fab fa-github fa-lg"></i></span></li>
          <li class="about_social_li"><span class="about_icon"><i class="fas fa-envelope fa-lg"></i></span></li>
       </ul>
 `
@@ -132,6 +131,16 @@ function openProjectDetail(project_id) {
 
     $('.fa-github').click(function () {
         window.open(project.src_location, '_blank');
+    });
+
+    $('.fa-linkedin-in').click(function () {
+        window.open(DATA.about.linkein, '_blank');
+        $(".nav_panel").slideUp("fast");
+    });
+
+    $('.fa-envelope').click(function () {
+        window.open(DATA.about.mailto, 'emailWindow');
+        $(".nav_panel").slideUp("fast");
     });
 }
 
