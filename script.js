@@ -102,19 +102,25 @@ function openProjectDetail(project_id) {
         <ul class="detail_stack_ul">
             ${li}
         </ul>
+       
       </section>
-      <div class="detail_content">
-        <h3>${project.title}</h3>
-        <br>
-        <h4>Problem</h4>
-        <hr>
-        <p>${project.problem}</p>
-        <br>    
-        <h4>Solution</h4>
-        <hr>
-        <p>${project.solution}</p>
+       <div class="detail_content">
+            <h3>${project.title}</h3>
+            <br>
+            <h4>Problem</h4>
+            <hr>
+            <p>${project.problem}</p>
+            <br>    
+            <h4>Solution</h4>
+            <hr>
+            <p>${project.solution}</p>
         <br>
       </div>
+      <ul class="about_social_ul">
+         <li class="about_social_li"><span class="about_icon"><i class="fab fa-linkedin-in fa-lg"></i></span></li>
+         <li class="about_social_li"><span class="about_icon"><i class="fab fa-github fa-lg"></i></span></li>
+         <li class="about_social_li"><span class="about_icon"><i class="fas fa-envelope fa-lg"></i></span></li>
+      </ul>
 `
     );
 
