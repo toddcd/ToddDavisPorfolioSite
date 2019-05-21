@@ -406,6 +406,7 @@ p > span {
     border: 1px #ebf2fa solid;
     border-radius: 5px;
     box-shadow: 1px 1px #ebf2fa;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 525px) {
@@ -429,7 +430,7 @@ p > span {
         display: flex;
         flex-direction: column;
         width: 500px;
-        padding: 7% 0 20px 0;
+        padding: 5% 0 20px 0;
     }
 
     .landing_img > img {
