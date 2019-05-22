@@ -54,8 +54,8 @@ function openLandingPage () {
          <div>
          <h3 class="greeting_desc">
            <p>Full Stack Developer.</p>
-           <p>Bike racer.</p>
-           <p>Coffee drinker.</p>
+           <p>Coffee connoisseur.</p>
+           <p>Bicycle racer.</p>
          </h3>
          </div>
         <div class="landing_img">
@@ -63,7 +63,9 @@ function openLandingPage () {
         </div>
         <div class="greeting_desc">
            <h2>About Me</h2>
-           <p>${DATA.about.desc}</p>
+            <p>
+                ${DATA.about.desc}
+            </p>
         </div>
       </section>
       <ul class="about_social_ul">
@@ -77,6 +79,7 @@ function openLandingPage () {
     $('header').css('width', '100%')
 
     createPageSocialClickHandlers();
+
 }
 
 function openProjectDetail(project_id) {
