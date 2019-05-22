@@ -226,6 +226,12 @@ p > span {
     color: #a5be00;
 }
 
+.greeting_desc > p {
+    white-space: pre-line;
+    padding-top: 0px;
+    color: #427aa1;
+}
+
 .greeting > p {
     color: #427aa1;
 }
@@ -238,7 +244,7 @@ p > span {
 .greeting_desc > h2 {
     text-align: left;
     color: #05668d;
-    padding: 20px 0 20px 0;
+    padding: 100px 0 0 0;
 }
 
 .landing_img {
