@@ -201,6 +201,7 @@ function createNavigationClickHandlers() {
 
     $('.td3_logo').click(function () {
         openLandingPage();
+        // $("body").scrollTop();
     })
 
     $(".nav_ul li").click(function () {
