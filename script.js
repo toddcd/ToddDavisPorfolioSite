@@ -52,11 +52,10 @@ function openLandingPage () {
             </div>      
         </div>
          <div>
-         <h3 class="greeting_desc">
-           <p>Full Stack Developer.</p>
-           <p>Coffee connoisseur.</p>
-           <p>Bicycle racer.</p>
-         </h3>
+         <div class="greeting_desc">
+           <p>I'm a full stack engineer in Boston, MA.</p>
+           <p>with a passion for technology,</p>
+           <p>design, and cycling.</p>
          </div>
         <div class="landing_img">
             <img src='./images/cycling_logo_a5be00_small.png' alt='cycling image logo'>
