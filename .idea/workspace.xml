@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
@@ -22,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="601" selection-start-line="9" selection-start-column="601" selection-end-line="9" selection-end-column="601" />
+              <caret line="9" column="485" selection-start-line="9" selection-start-column="485" selection-end-line="9" selection-end-column="485" />
             </state>
           </provider>
         </entry>
@@ -232,12 +232,12 @@
       <workItem from="1557923700370" duration="36776000" />
       <workItem from="1558004645077" duration="117538000" />
       <workItem from="1558472134518" duration="11418000" />
-      <workItem from="1558575573263" duration="1635000" />
+      <workItem from="1558575573263" duration="1920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180099000" />
+    <option name="totallyTimeSpent" value="180384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="346" y="68" width="1446" height="1014" extended-state="0" />
@@ -460,13 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-208">
@@ -477,7 +470,14 @@
     <entry file="file://$PROJECT_DIR$/data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="601" selection-start-line="9" selection-start-column="601" selection-end-line="9" selection-end-column="601" />
+          <caret line="9" column="485" selection-start-line="9" selection-start-column="485" selection-end-line="9" selection-end-column="485" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
