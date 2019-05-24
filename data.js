@@ -5,9 +5,9 @@ const DATA = {
         cover_alt: 'about me',
         linkein: 'https://www.linkedin.com/in/todd-c-davis',
         github: 'https://github.com/toddcd/',
-        mailto: 'mailto:tejastcd@gmail.com?subject=Professional Development Opportunities',
+        mailto: 'mailto:tejastcd@gmail.com?subject=Software Engineering Opportunities',
         subtitle: 'I’m a full stack developer based in Boston, Massachusetts.',
-        desc: "I have diverse experience from infrastructure and software engineering roles in start-up and corporate size teams. I came into software development after a career as a network engineer where I managed data centers, hardware, and security infrastructure.\n\r After some retooling, I moved into a role as a Java developer building APIs and ultimately found my way to frontend development. I’m dedicated to the mission of software engineering and design, and aiding company and customer success.\n\r When I’m not writing code and exploring new technologies, you can find me racking up miles on my bicycle or enjoying a flat white at the local cafe."},
+        desc: "I have diverse infrastructure and software engineering experience the was cultivated while working as a member of talented start-up and corporate technology teams.\n\n I came into software development after a career as a network engineer where I managed data centers, hardware, and security infrastructure. After some retooling, I moved into a role as a Java developer building APIs and ultimately found my way to frontend development.\n\n I’m dedicated to the mission of software engineering and design, and aiding company and customer success.\n\r When I’m not writing code and exploring new technologies, you can find me racking up miles on my bicycle or enjoying a flat white at the local cafe."},
     project_detail: [
         {
             id: 1,
