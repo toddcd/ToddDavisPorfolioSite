@@ -53,9 +53,9 @@ function openLandingPage () {
         </div>
          <div>
          <div class="greeting_desc">
-           <p>I'm a full stack engineer in Boston, MA.</p>
-           <p>with a passion for technology,</p>
-           <p>design, and cycling.</p>
+           <p>
+            ${DATA.about.short_desc}
+           </p>
          </div>
         <div class="landing_img">
             <img src='./images/cycling_logo_a5be00_small.png' alt='cycling image logo'>
@@ -63,7 +63,7 @@ function openLandingPage () {
         <div class="greeting_desc">
            <h2>About Me</h2>
             <p>
-                ${DATA.about.desc}
+                ${DATA.about.long_desc}
             </p>
         </div>
       </section>
