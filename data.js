@@ -11,6 +11,61 @@ const DATA = {
     project_detail: [
         {
             id: 1,
+            title: 'Risk Budgeting Tool',
+            background_css_img: 'riskbudget',
+            detail_img: './images/merckxPodium_detail.png',
+            detail_alt: 'merckx podium',
+            stack: [
+                'html5_icon',
+                'javascript_icon',
+                'react_icon',
+                'nodejs_icon',
+                'postgresql_icon'
+            ],
+            problem: 'Professional cycling has a rich and deep history in Europe and each one of the Monument events is the equivalent of the Superbowl or Worlds Series. Unfortunately cycling is a complicated and hard to understand sport.',
+            solution: 'The Cycling Monuments Quiz tests and builds a player’s knowledge of cycling’s hardest and most prestigious one-day races in professional cycling with interesting questions and compelling photos.  There are multiple choice questions that players answer and receive intimidate feedback. At the end they are notified how they did.',
+            active: true,
+            demo_location: 'https://td3-riskbudget.now.sh/',
+            src_location: 'https://github.com/toddcd/risk-budget-client'
+        },
+        {
+            id: 2,
+            title: 'Ciclismo Snack Finder',
+            background_css_img: 'ciclismo',
+            detail_img: './images/merckxPodium_detail.png',
+            detail_alt: 'merckx podium',
+            stack: [
+                'html5_icon',
+                'javascript_icon',
+                'jquery_icon'
+            ],
+            problem: 'Professional cycling has a rich and deep history in Europe and each one of the Monument events is the equivalent of the Superbowl or Worlds Series. Unfortunately cycling is a complicated and hard to understand sport.',
+            solution: 'The Cycling Monuments Quiz tests and builds a player’s knowledge of cycling’s hardest and most prestigious one-day races in professional cycling with interesting questions and compelling photos.  There are multiple choice questions that players answer and receive intimidate feedback. At the end they are notified how they did.',
+            active: true,
+            demo_location: 'http://ciclismosnackfinder.com',
+            src_location: 'https://github.com/toddcd/CiclismoSnackFinder'
+        },
+        {
+            id: 3,
+            title: 'Velo Notes',
+            background_css_img: 'velonotes',
+            detail_img: './images/merckxPodium_detail.png',
+            detail_alt: 'merckx podium',
+            stack: [
+                'html5_icon',
+                'javascript_icon',
+                'react_icon',
+                'nodejs_icon',
+                'postgresql_icon'
+            ],
+            problem: 'Professional cycling has a rich and deep history in Europe and each one of the Monument events is the equivalent of the Superbowl or Worlds Series. Unfortunately cycling is a complicated and hard to understand sport.',
+            solution: 'The Cycling Monuments Quiz tests and builds a player’s knowledge of cycling’s hardest and most prestigious one-day races in professional cycling with interesting questions and compelling photos.  There are multiple choice questions that players answer and receive intimidate feedback. At the end they are notified how they did.',
+            active: true,
+            demo_location: 'http://velonotes.com',
+            src_location: 'https://github.com/toddcd/velonotes-client'
+        },
+        {
+            id: 4,
             title: 'Cycling Monuments',
             background_css_img: 'monuments',
             detail_img: './images/merckxPodium_detail.png',
