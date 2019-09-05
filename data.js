@@ -13,7 +13,7 @@ const DATA = {
             id: 1,
             title: 'Risk Budgeting Tool',
             background_css_img: 'riskbudget',
-            detail_img: './images/merckxPodium_detail.png',
+            detail_img: './images/burroughs_detail.jpg',
             detail_alt: 'merckx podium',
             stack: [
                 'html5_icon',
@@ -22,8 +22,9 @@ const DATA = {
                 'nodejs_icon',
                 'postgresql_icon'
             ],
-            problem: 'Professional cycling has a rich and deep history in Europe and each one of the Monument events is the equivalent of the Superbowl or Worlds Series. Unfortunately cycling is a complicated and hard to understand sport.',
-            solution: 'The Cycling Monuments Quiz tests and builds a player’s knowledge of cycling’s hardest and most prestigious one-day races in professional cycling with interesting questions and compelling photos.  There are multiple choice questions that players answer and receive intimidate feedback. At the end they are notified how they did.',
+            problem: 'Risk budgeting is a portfolio construction method where capital is allocated based on an individual assets risk and return contributions as it relates to other funds in the portfolio and the over-all investment strategy.'+
+                'The Risk Budgeting Tool helps provide insight by taking in fund performance along with weight, risk, and return variables that can then be used to analyzed the portfolio and identify potential areas where capital may be redistributed.',
+            solution: 'After using the portfolio template to construct a portfolio, and providing the important performance data for the underlying funds, the portfolio can be imported into the application and persisted to the database.',
             active: true,
             demo_location: 'https://td3-riskbudget.now.sh/',
             src_location: 'https://github.com/toddcd/risk-budget-client'

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0378fd4-2fb9-4f13-8657-9ad9de58191f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ciclismo_cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/ciclismo_cover.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,40 +22,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>nav_ul</find>
-      <find>about_social_ul</find>
-      <find>header</find>
-      <find>demo_ul</find>
-      <find>about_title</find>
-      <find>about_header</find>
-      <find>hover</find>
-      <find>img</find>
-      <find>detail_header</find>
-      <find>about</find>
-      <find>detail</find>
-      <find>detail_content</find>
-      <find>logo</find>
-      <find>landing</find>
-      <find>nav_panel</find>
-      <find>nav_panel_button</find>
-      <find>nav_panel_social_li</find>
-      <find>nav_button</find>
-      <find>nav_bar_social_li</find>
-      <find>fa-linkedin-in</find>
-      <find>createSocialClickHandlers</find>
-      <find>.fa-linkedin-in</find>
-      <find>project</find>
-      <find>hamburger</find>
-      <find>nav_bar</find>
-      <find>greeting</find>
-      <find>ph1</find>
-      <find>email</find>
-      <find>100</find>
-      <find>greeting_desc</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -137,7 +104,7 @@
       <workItem from="1558725312863" duration="1863000" />
       <workItem from="1558799700534" duration="738000" />
       <workItem from="1563205741902" duration="9000" />
-      <workItem from="1567696151283" duration="4302000" />
+      <workItem from="1567696151283" duration="14444000" />
     </task>
     <servers />
   </component>
