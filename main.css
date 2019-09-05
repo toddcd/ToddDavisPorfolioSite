@@ -46,6 +46,31 @@ nav {
     height: 100%;
     width: 100%;
 }
+
+.riskbudget {
+    background: url('./images/riskbudget_cover.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.ciclismo {
+    background: url('./images/ciclismo_cover.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.velonotes {
+    background: url('./images/velonotes_cover.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
 .html5_icon {
     background: url('./images/html5_icon.png') no-repeat center center;
 }
@@ -60,6 +85,9 @@ nav {
 }
 .nodejs_icon {
     background: url('./images/nodejs_icon_3.png') no-repeat center center;
+}
+.postgresql_icon {
+    background: url('./images/postgresql_icon.png') no-repeat center center;
 }
 
 .stack_icon_li > a {
