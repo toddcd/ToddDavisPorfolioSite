@@ -10,24 +10,27 @@ function openProjects() {
         <hr>
         <p>Full Stack Developer</p>
        </header>
-       <h3 class="ph1">recent projects</h3>
-       ${generateListOfProjects()}
+        <h3 class="ph1">recent projects</h3>
+        <div class="recent_project_list">
+            ${generateListOfProjects()}
+        </div>
 `
     )
 
-    $('.monuments').click(function () {
-        openProjectDetail(0);
+    $('.project').click(function (e) {
+        openProjectDetail(this.id);
     });
 }
 
 function generateListOfProjects() {
 
     const projects = DATA.project_detail.map(project => {
+
         const li = project.stack.map(l => {
             return `<li class="stack_icon_li ${l}"></li>`
         }).join('\n');
 
-        return `<section class="project">
+        return `<section id=${project.id} class="project">
             <div class=${project.background_css_img}>
                 <p class="project_title">${project.title}</p>
             </div>
@@ -40,7 +43,12 @@ function generateListOfProjects() {
     return projects;
 }
 
-function openLandingPage () {
+function handleProjectClicked(e) {
+    console.log(e.target)
+    openProjectDetail(3);
+}
+
+function openLandingPage() {
     $('.nav_panel').slideUp('fast');
 
     $('#main').html(`
@@ -83,7 +91,7 @@ function openLandingPage () {
 
 function openProjectDetail(project_id) {
 
-    let project = DATA.project_detail[project_id];
+    let project = DATA.project_detail[project_id - 1];
 
     // generate icons for tech used in project
     const li = project.stack.map(l => {
@@ -206,6 +214,7 @@ function createNavigationClickHandlers() {
     $(".nav_ul li").click(function () {
         $(".nav_panel").slideUp("fast");
     });
+
     $('.fa-bars').click(function () {
         toggleNavPanel();
     });
