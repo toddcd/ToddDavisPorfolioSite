@@ -66,7 +66,7 @@ function openLandingPage() {
            </p>
          </div>
         <div class="landing_img">
-            <img src='./images/cycling_logo_a5be00_small.png' alt='cycling image logo'>
+            <img src='./images/landing/cycling_logo_a5be00_small.png' alt='cycling image logo'>
         </div>
         <div class="greeting_desc">
            <h2>About Me</h2>
@@ -98,11 +98,23 @@ function openProjectDetail(project_id) {
         return `<li class="stack_icon_li ${l}"></li>`
     }).join('\n');
 
+    const bodyImage = (project.detail_body_img ? `
+        <div class="body_image">
+            <img src=${project.detail_body_img} alt=${project.detail_body_alt}">
+        </div><br>
+        ` : `<div></div>`)
+
+    const footerImage = (project.detail_footer_img ? `
+        <br><div class="footer_image">
+            <img src=${project.detail_footer_img} alt=${project.detail_footer_alt}">
+        </div>
+        ` : `<div></div>`)
+
     $('header').hide('fast');
 
     $('#main').html(`
       <header class="detail_header" role="banner">
-      <img src=${project.detail_img} alt=${project.detail_alt}">
+        <img src=${project.detail_header_img} alt=${project.detail_header_alt}">
       </header>
       <section class="detail">
         <ul class="demo_ul">
@@ -117,13 +129,16 @@ function openProjectDetail(project_id) {
        <div class="detail_content">
             <h3>${project.title}</h3>
             <br>
+            ${project.description? `<p>${project.description}</p><br>`: `<div></div>`}
             <h4>Problem</h4>
             <hr>
             <p>${project.problem}</p>
-            <br>    
+            <br>   
+             ${bodyImage}
             <h4>Solution</h4>
             <hr>
             <p>${project.solution}</p>
+            ${footerImage}
         <br>
       </div>
       <ul class="about_social_ul">
