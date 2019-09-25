@@ -110,21 +110,16 @@ nav {
 .java_icon {
     background: url('./images/icons/java_icon.png') no-repeat center center;
 }
-.td3_logo {
-    background: url('./images/icons/td3_logo_white_blue_45x45.png') no-repeat left center;
-    height: 45px;
-    width: 45px;
-}
 
 .td3_logo {
-    background: url('./images/icons/td3_logo_white_blue_45x45.png') no-repeat left center;
+    background: url('./images/icons/circle-logo.png') no-repeat left center;
     height: 45px;
     width: 45px;
     cursor: pointer;
 }
 
 .td3_logo:hover {
-    background: url('./images/icons/td3_logo_white_green_45x45.png') no-repeat left center;
+    background: url('./images/icons/circle-logo-hover.png') no-repeat left center;
 }
 
 .logo {
