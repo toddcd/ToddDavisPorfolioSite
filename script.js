@@ -10,7 +10,7 @@ function openProjects() {
         <hr>
         <p>Full Stack Developer</p>
        </header>
-        <h3 class="ph1">recent projects</h3>
+        <h3 class="ph1">Recent Projects</h3>
         <div class="recent_project_list">
             ${generateListOfProjects()}
         </div>

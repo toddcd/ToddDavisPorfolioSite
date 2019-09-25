@@ -2,7 +2,7 @@
 *.iml
 
 .idea/
-.idea/workspace.xml
+/images_working
 
 /archive
 
